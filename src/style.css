@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  /* border: 1px solid red; */
+}
+
+html {
+  @apply bg-[#181818] w-[100vw] h-[100vh] text-white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  @apply text-4xl mb-5;
+  font-family: 'Montserrat', sans-serif;
+}
+h2 {
+  @apply text-3xl mb-5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  @apply mb-7;
+}
+
+a {
+  @apply text-blue-500 underline transition-all;
+
+  &:hover {
+    @apply text-blue-300;
+  }
+}
+
+#app {
+  @apply max-w-full min-h-[100vh] flex flex-col;
+  @apply lg:max-w-[1080px] lg:mx-auto; /* lg screen */
+}
