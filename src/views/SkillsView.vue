@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue'
 
 let icons = ref([
@@ -12,71 +12,55 @@ let icons = ref([
   'nodejs',
   'php',
   'postgresql',
-  'cordova',
+  'tailwindcss',
 ])
 </script>
 
 <template>
-  <section>
-    <div class="image">
+  <section class="flex justify-center">
+    <div class="w-[350px] p-10">
       <img src="@/assets/josh-point.png" class="w-full" />
     </div>
-    <div class="text">
-      <h1>Some of my skills.</h1>
-      <h2>My favorite languages and tools.</h2>
-      <div class="logo-holder">
-        <img
-          v-for="(icon, index) in icons"
-          :key="index"
-          class="logo"
-          :src="'assets/logos/' + icon + '.svg'"
-          :alt="icon"
-          :title="icon"
-        />
+    <div class="w-[650px] p-5">
+      <div class="mb-10">
+        <h1>Some skills and stuff.</h1>
+        <ul>
+          <li>
+            Learn some Infrastructure as Code (IaC) tools like Terraform and
+            Ansible.
+          </li>
+          <li>Learning mobile development with Flutter.</li>
+          <li>I want to make more games with Godot.</li>
+        </ul>
       </div>
 
-      <h2>What I'm up to?</h2>
-      <ul>
-        <li>
-          Learning mobile development with
-          <a href="https://cordova.apache.org/" target="_blank">Cordova</a> and
-          <a href="https://flutter.dev/" target="_blank">Flutter</a>.
-        </li>
-        <li>
-          I want to make more games with
-          <a href="https://godotengine.org/" target="_blank">Godot</a>.
-        </li>
-      </ul>
+      <div class="mb-5">
+        <h2>My favorite languages and tools.</h2>
+        <div class="mb-7 flex flex-wrap justify-start">
+          <img
+            v-for="(icon, index) in icons"
+            :key="index"
+            class="m-3 w-[75px]"
+            :src="'assets/logos/' + icon + '.svg'"
+            :alt="icon"
+            :title="icon"
+          />
+        </div>
+      </div>
+
+      <div>
+        <h2>What I'm doing next.</h2>
+        <ul>
+          <li>
+            Learn some Infrastructure as Code (IaC) tools like Terraform and
+            Ansible.
+          </li>
+          <li>Learning mobile development with Flutter.</li>
+          <li>I want to make more games with Godot.</li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
 
-<style scoped lang="postcss">
-section {
-  @apply flex justify-center;
-
-  .image {
-    @apply p-10 w-[350px];
-  }
-
-  .text {
-    @apply p-5 w-[650px];
-
-    .logo-holder {
-      @apply mb-7 flex justify-start flex-wrap;
-
-      .logo {
-        @apply w-[75px] m-3;
-      }
-    }
-  }
-}
-
-ul {
-  @apply list-disc ml-6;
-
-  li {
-    @apply mb-2;
-  }
-}
-</style>
+<style scoped lang="postcss"></style>

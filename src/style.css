@@ -14,7 +14,7 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-
+/* TITLES */
 h1 {
   @apply text-4xl mb-5;
   font-family: 'Montserrat', sans-serif;
@@ -24,10 +24,10 @@ h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* GENERAL */
 p {
   @apply mb-7;
 }
-
 a {
   @apply text-blue-500 underline transition-all;
 
@@ -35,7 +35,14 @@ a {
     @apply text-blue-300;
   }
 }
+ul {
+  @apply list-disc ml-6;
+  li {
+    @apply mb-2;
+  }
+}
 
+/* BASE APP */
 #app {
   @apply max-w-full min-h-[100vh] flex flex-col;
   @apply lg:max-w-[1080px] lg:mx-auto; /* lg screen */

@@ -1,11 +1,11 @@
-<script setup lang="ts">
+<script setup>
 import Menu from '@/components/singles/Menu.vue'
 import Footer from '@/components/singles/Footer.vue'
 </script>
 
 <template>
   <Menu />
-  <main>
+  <main class="grow p-5">
     <!-- <router-view v-slot="{ Component }">
       <transition name="fade">
         <component :is="Component" />
@@ -16,8 +16,4 @@ import Footer from '@/components/singles/Footer.vue'
   <Footer />
 </template>
 
-<style scoped lang="postcss">
-main {
-  @apply p-5 grow;
-}
-</style>
+<style scoped lang="postcss"></style>
