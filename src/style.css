@@ -23,17 +23,20 @@ h2 {
   @apply text-3xl mb-5;
   font-family: 'Montserrat', sans-serif;
 }
+h3 {
+  @apply text-2xl mb-5;
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* GENERAL */
 p {
   @apply mb-7;
 }
 a {
-  @apply text-blue-500 underline transition-all;
-
-  &:hover {
-    @apply text-blue-300;
-  }
+  @apply text-white no-underline transition-all relative;
+  @apply hover:text-white;
+  @apply before:content-[''] before:w-full before:h-[1px] before:bg-white before:absolute before:bottom-0 before:left-0 before:transition-all;
+  @apply hover:before:bg-[#be1f4d] hover:before:h-[4px] hover:before:bottom-[-3px];
 }
 ul {
   @apply list-disc ml-6;

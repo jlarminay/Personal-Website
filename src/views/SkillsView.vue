@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import InlineSvg from 'vue-inline-svg'
 
 let icons = ref([
   'vuejs',
@@ -37,14 +38,34 @@ let icons = ref([
       <div class="mb-5">
         <h2>My favorite languages and tools.</h2>
         <div class="mb-7 flex flex-wrap justify-start">
-          <img
+          <div
             v-for="(icon, index) in icons"
             :key="index"
-            class="m-3 w-[75px]"
-            :src="'assets/logos/' + icon + '.svg'"
-            :alt="icon"
-            :title="icon"
-          />
+            class="group relative m-3 w-[75px]"
+          >
+            <!-- <img
+              :src="'assets/logos/' + icon + '.svg'"
+              :alt="icon"
+              :title="icon"
+              class="absolute top-0 z-10 blur-none transition-all group-hover:blur-sm"
+            />
+            <img
+              :src="'assets/logos/' + icon + '.svg'"
+              class="relative top-0 z-20 fill-none stroke-black stroke-1"
+            /> -->
+            <InlineSvg
+              :src="'assets/logos/' + icon + '.svg'"
+              :alt="icon"
+              :title="icon"
+              class="absolute top-0 z-10 h-full w-full blur-none transition-all group-hover:blur-sm"
+            />
+            <InlineSvg
+              :src="'assets/logos/' + icon + '.svg'"
+              :alt="icon"
+              :title="icon"
+              class="relative top-0 z-20 h-full w-full"
+            />
+          </div>
         </div>
       </div>
 

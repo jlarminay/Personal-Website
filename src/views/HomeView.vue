@@ -69,10 +69,15 @@ async function updateTitle() {
         <h1 class="m-0">Hey I'm Josh.</h1>
         <span id="hand-wave" class="cursor-grab">👋</span>
       </div>
-      <div class="flex h-[36px] items-center justify-start">
+      <div class="mb-10 flex h-[36px] items-center justify-start">
         <h2 class="m-0 text-3xl">I'm a {{ title }}</h2>
         <div id="cursor" class="ml-2 h-full w-[2px] bg-white"></div>
       </div>
+      <a
+        class="border border-white px-4 py-3 text-white no-underline transition before:hidden hover:bg-white hover:text-[#181818]"
+        href="mailto:j.larminay@gmail.com"
+        >Get in touch.</a
+      >
     </div>
   </section>
 </template>
@@ -116,16 +121,16 @@ async function updateTitle() {
 }
 
 #image {
-  @apply p-10 relative w-[500px] flex justify-center;
-  -webkit-mask-image: url(@/assets/blob.svg);
-  mask-image: url(@/assets/blob.svg);
+  @apply relative w-[500px] flex justify-center;
+  -webkit-mask-image: url(@/assets/blobanimation.svg);
+  mask-image: url(@/assets/blobanimation.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
 #background-spin {
   animation: background-spin 6s linear infinite;
 }
-#hand-wave {
+#hand-wave:hover {
   animation: hand-wave 0.5s linear infinite;
 }
 #cursor {

@@ -37,7 +37,7 @@ let tagColors = ref({
         :to="{ name: 'Portfolio/Item1' }"
         v-for="(project, index) in projects"
         :key="index"
-        class="group relative m-3 h-[175px] w-[300px] overflow-hidden"
+        class="group relative m-3 h-[175px] w-[300px] overflow-hidden before:hidden"
       >
         <img
           :src="'assets/portfolio/' + project.frontImage"
@@ -51,7 +51,7 @@ let tagColors = ref({
             <span
               v-for="(tag, index) in project.tags"
               :key="index"
-              class="mr-2 rounded-md px-2 text-sm"
+              class="mr-2 rounded-md px-1.5 text-xs"
               :style="'background-color: ' + tagColors[tag]"
             >
               {{ tag }}
