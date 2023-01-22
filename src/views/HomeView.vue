@@ -73,11 +73,7 @@ async function updateTitle() {
         <h2 class="m-0 text-3xl">I'm a {{ title }}</h2>
         <div id="cursor" class="ml-2 h-full w-[2px] bg-white"></div>
       </div>
-      <a
-        class="border border-white px-4 py-3 text-white no-underline transition before:hidden hover:bg-white hover:text-[#181818]"
-        href="mailto:j.larminay@gmail.com"
-        >Get in touch.</a
-      >
+      <a class="btn" href="mailto:j.larminay@gmail.com">Get in touch.</a>
     </div>
   </section>
 </template>

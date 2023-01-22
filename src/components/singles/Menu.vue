@@ -2,7 +2,7 @@
   <menu class="mt-5 mb-10 flex items-center justify-between text-center">
     <router-link :to="{ name: 'HomeView' }" class="before:hidden">
       <div class="p-2 font-['Montserrat'] text-4xl font-black text-white">
-        Josh Larminay
+        Josh Larminay.
       </div>
     </router-link>
     <nav>

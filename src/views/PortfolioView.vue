@@ -2,42 +2,60 @@
 import { ref } from 'vue'
 import AllProjects from '@/assets/portfolio/projects.js'
 
+let search = ref('')
 let projects = ref(AllProjects)
 let tagColors = ref({
-  Godot: '#478cbf',
-  JS: '#c3ab00',
-  HTML: '#dd4b25',
-  CSS: '#254bdd',
-  PHP: '#7377ad',
-  RaspberryPi: '#bd1b48',
-  Python: '#2e6693',
-  Unity: '#100b09',
-  'C#': '#903ba7',
+  'Godot.': '#478cbf',
+  'JS.': '#c3ab00',
+  'HTML.': '#dd4b25',
+  'CSS.': '#254bdd',
+  'PHP.': '#7377ad',
+  'RaspberryPi.': '#bd1b48',
+  'Python.': '#2e6693',
+  'Unity.': '#100b09',
+  'C#.': '#903ba7',
+  'MySQL.': '#335268',
 })
+
+function displayItem(projectItem) {
+  if (search.value.length === 0) return true
+  if (projectItem.name.toLowerCase().includes(search.value.toLowerCase()))
+    return true
+  if (
+    projectItem.tags.some((tag) =>
+      tag.toLowerCase().includes(search.value.toLowerCase()),
+    )
+  )
+    return true
+  return false
+}
 </script>
 
 <template>
   <section class="p-5">
     <h1>Cool projects I've done.</h1>
     <p>
-      Here are some projects I've created. More stuff can be seen on my
+      Here are some of my favourite projects, although more can be seen on my
       <a href="https://github.com/jlarminay" target="_blank">GitHub</a> or
-      <a href="https://jlarminay.itch.io/" target="_blank">itch.io</a>.
+      <a href="https://jlarminay.itch.io/" target="_blank">itch.io</a>. Due to
+      my busy schedule running my business, I have limited time to spend on
+      personal projects. However, through my work, I have opportunities to work
+      with new technologies but am unable to share those projects in detail.
     </p>
-    <p>
-      These are the projects in which I've gone into more detail for compared to
-      some smaller projects on my GitHub. I wish I had more time to create
-      projects and try out new tools pr technologies, but running my buisness is
-      keeping me very busy. With my job, I have lots of opportunities to try new
-      technologies but I am often contrictied by the project's requirements and
-      I unfortunatly can't share any of them here in detail.
-    </p>
+    <!-- <div class="text-center">
+      <input
+        v-model="search"
+        class="border border-white bg-[#181818] px-2 py-1 text-white outline-none focus:outline-none"
+        placeholder="Search."
+      />
+    </div> -->
     <div class="flex flex-wrap justify-center">
       <router-link
-        :to="{ name: 'Portfolio/Item1' }"
+        :to="{ name: 'Portfolio/' + project.id }"
         v-for="(project, index) in projects"
         :key="index"
-        class="group relative m-3 h-[175px] w-[300px] overflow-hidden before:hidden"
+        class="group relative m-3 h-[175px] w-[300px] overflow-hidden transition-all duration-500 before:hidden"
+        :class="{ hidden: !displayItem(project) }"
       >
         <img
           :src="'assets/portfolio/' + project.frontImage"
