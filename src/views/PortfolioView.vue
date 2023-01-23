@@ -15,6 +15,9 @@ let tagColors = ref({
   'Unity.': '#100b09',
   'C#.': '#903ba7',
   'MySQL.': '#335268',
+  'Vue.': '#41b883',
+  'Node.': '#83cd29',
+  'Tailwind.': '#38b2ac',
 })
 
 function displayItem(projectItem) {
@@ -35,10 +38,10 @@ function displayItem(projectItem) {
   <section class="p-5">
     <h1>Cool projects I've done.</h1>
     <p>
-      Here are some of my favourite projects, although more can be seen on my
+      Here are some of my favourite projects and more can be seen on my
       <a href="https://github.com/jlarminay" target="_blank">GitHub</a> or
-      <a href="https://jlarminay.itch.io/" target="_blank">itch.io</a>. Due to
-      my busy schedule running my business, I have limited time to spend on
+      <a href="https://jlarminay.itch.io/" target="_blank">itch.io</a>. Due to a
+      busy schedule running my business, I have limited time to spend on
       personal projects. However, through my work, I have opportunities to work
       with new technologies but am unable to share those projects in detail.
     </p>

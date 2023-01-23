@@ -11,7 +11,7 @@
         >
         <a
           class="btn ml-5"
-          href="https://jlarminay.github.io/js-snake-game/"
+          href="https://projects.joshlarminay.com/js-snake/"
           target="_blank"
           >View project.</a
         >
@@ -35,7 +35,7 @@
       <div class="aspect-video w-2/5">
         <img
           class="h-full w-full object-contain"
-          src="@/assets/portfolio/js_snake/js_snake-slide1.gif"
+          src="../../assets/portfolio/js_snake/js_snake-slide1.webp"
         />
       </div>
     </div>
@@ -43,19 +43,19 @@
       <div class="aspect-video w-2/5">
         <img
           class="h-full w-full object-contain"
-          src="@/assets/portfolio/js_snake/js_snake-slide2.jpg"
+          src="../../assets/portfolio/js_snake/js_snake-slide2.webp"
         />
       </div>
       <div class="w-3/5">
         <h3>Development.</h3>
         <p>
-          The project was based off BattleSnake so the idea was for the snake to
-          have a time limit to get food or they will die. I implimented a simple
-          A* pathfinding library to allow the snake to find the closest food
-          when they got hungry enough. I'm displaying the board by creating a
-          table and coloring cells to the correct item. I should of done it with
-          canvas items, but it was a proff of concept and I dind't know canvas
-          that well at the time.
+          The project was based off BattleSnake, so the idea was for the snake
+          to have a time limit to get food, or they will die. I implemented a
+          simple A* pathfinding library to allow the snake to find the closest
+          food when they got hungry enough. I'm displaying the board by creating
+          a table and colouring cells to the correct item. I should have done it
+          with canvas items, but it was a proof of concept and I didn't know
+          canvas that well at the time.
         </p>
         <p>
           Initially I was planning on just having the computer play itself, but

@@ -33,7 +33,7 @@
       <div class="aspect-video w-2/5">
         <img
           class="h-full w-full object-contain"
-          src="@/assets/portfolio/swords_n_souls/swords_n_souls-slide1.gif"
+          src="../../assets/portfolio/swords_n_souls/swords_n_souls-slide1.webp"
         />
       </div>
     </div>
@@ -41,7 +41,7 @@
       <div class="aspect-video w-2/5">
         <img
           class="h-full w-full object-contain"
-          src="@/assets/portfolio/swords_n_souls/swords_n_souls-slide3.jpg"
+          src="../../assets/portfolio/swords_n_souls/swords_n_souls-slide2.webp"
         />
       </div>
       <div class="w-3/5">
@@ -51,7 +51,7 @@
           <a href="https://itch.io/jam/mini-jam-70-heaven" target="_blank"
             >Mini Jam 70</a
           >. The theme was 'heaven' and the limitation was 'player must be an
-          inanimate object'. This was my first time created a game so I didn't
+          inanimate object'. This was my first time created a game, so I didn't
           really know what to expect.
         </p>
         <p>
@@ -69,7 +69,7 @@
             href="https://jlarminay.itch.io/swords-n-souls/devlog/210289/post-mortem"
             target="_blank"
           >
-            Post Mortem
+            Postmortem
           </a>
           which can be read on the game page.
         </p>

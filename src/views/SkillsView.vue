@@ -25,7 +25,7 @@ let icons = ref([
     <div class="w-[650px] p-5">
       <div class="mb-10">
         <h1>Some skills and stuff.</h1>
-        <ul>
+        <ul class="hidden">
           <li>
             Learn some Infrastructure as Code (IaC) tools like Terraform and
             Ansible.

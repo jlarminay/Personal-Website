@@ -1,22 +1,57 @@
-import Item1 from '@/views/portfolio/item1.vue'
-import swordsnsouls from '@/views/portfolio/swords_n_souls.vue'
-import jssnake from '@/views/portfolio/js_snake.vue'
+import arcade_machine from '@/views/portfolio/arcade_machine.vue'
+import personal_website from '@/views/portfolio/personal_website.vue'
+import swords_n_souls from '@/views/portfolio/swords_n_souls.vue'
+import js_snake from '@/views/portfolio/js_snake.vue'
+import larminay_vault from '@/views/portfolio/larminay_vault.vue'
+import cell_simulator from '@/views/portfolio/cell_simulator.vue'
+import victoria_titan from '@/views/portfolio/victoria_titan.vue'
+import floor_check_report from '@/views/portfolio/floor_check_report.vue'
+import ai_dino_runner from '@/views/portfolio/ai_dino_runner.vue'
 
 export default [
   {
-    path: '/portfolio/item1',
-    name: 'Portfolio/Item1',
-    component: Item1,
+    path: '/portfolio/arcade-machine',
+    name: 'Portfolio/arcade_machine',
+    component: arcade_machine,
   },
-
+  {
+    path: '/portfolio/personal-website',
+    name: 'Portfolio/personal_website',
+    component: personal_website,
+  },
   {
     path: '/portfolio/swords-n-souls',
     name: 'Portfolio/swords_n_souls',
-    component: swordsnsouls,
+    component: swords_n_souls,
   },
   {
     path: '/portfolio/js-snake',
     name: 'Portfolio/js_snake',
-    component: jssnake,
+    component: js_snake,
+  },
+  {
+    path: '/portfolio/larminay-vault',
+    name: 'Portfolio/larminay_vault',
+    component: larminay_vault,
+  },
+  {
+    path: '/portfolio/cell-simulator',
+    name: 'Portfolio/cell_simulator',
+    component: cell_simulator,
+  },
+  {
+    path: '/portfolio/victoria-titan',
+    name: 'Portfolio/victoria_titan',
+    component: victoria_titan,
+  },
+  {
+    path: '/portfolio/floor-check-report',
+    name: 'Portfolio/floor_check_report',
+    component: floor_check_report,
+  },
+  {
+    path: '/portfolio/ai-dino-runner',
+    name: 'Portfolio/ai_dino_runner',
+    component: ai_dino_runner,
   },
 ]

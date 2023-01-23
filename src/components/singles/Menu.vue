@@ -10,7 +10,6 @@
       <router-link :to="{ name: 'AboutView' }">About.</router-link>
       <router-link :to="{ name: 'SkillsView' }">Skills.</router-link>
       <router-link :to="{ name: 'PortfolioView' }">Portfolio.</router-link>
-      <router-link :to="{ name: 'Portfolio/Item1' }">Item1.</router-link>
     </nav>
   </menu>
 </template>
