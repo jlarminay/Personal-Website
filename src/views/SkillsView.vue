@@ -18,11 +18,8 @@ let icons = ref([
 </script>
 
 <template>
-  <section class="flex justify-center">
-    <div class="w-[350px] p-10">
-      <img src="@/assets/josh-point.png" class="w-full" />
-    </div>
-    <div class="w-[650px] p-5">
+  <section class="justify-center md:flex">
+    <div class="order-2 p-5 md:w-[650px]">
       <div class="mb-10">
         <h1>Some skills and stuff.</h1>
         <ul class="hidden">
@@ -80,6 +77,9 @@ let icons = ref([
           <li>I want to make more games with Godot.</li>
         </ul>
       </div>
+    </div>
+    <div class="order-1 mx-auto w-[400px] max-w-[80%] p-10 md:w-[350px]">
+      <img src="@/assets/josh-point.png" class="w-full" />
     </div>
   </section>
 </template>

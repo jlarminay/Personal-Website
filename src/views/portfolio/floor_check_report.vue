@@ -1,8 +1,8 @@
 <template>
   <article class="p-5">
-    <div class="flex items-center justify-between">
+    <div class="items-center justify-between text-center md:flex md:text-left">
       <h1 class="mb-0">Floor Check Report.</h1>
-      <div>
+      <div class="my-6 md:my-0">
         <a class="btn ml-5 hidden" href="" target="_blank">View GitHub.</a>
         <a
           class="btn ml-5"
@@ -12,8 +12,8 @@
         >
       </div>
     </div>
-    <div class="mt-16 flex items-start gap-10">
-      <div class="w-3/5">
+    <div class="mt-16 items-start gap-10 md:flex">
+      <div class="md:w-3/5">
         <h3>About.</h3>
         <p>
           When I worked at Thirfty Foods, we were required to do hourly floor
@@ -32,21 +32,15 @@
           page.
         </p>
       </div>
-      <div class="aspect-video w-2/5">
+      <div class="aspect-video md:w-2/5">
         <img
-          class="h-full w-full object-contain"
-          src="@/assets/portfolio/floor_check_report/floor_check_report-slide1.webp"
+          class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
+          src="../../assets/portfolio/floor_check_report/floor_check_report-slide1.webp"
         />
       </div>
     </div>
-    <div class="mt-16 flex items-start gap-10">
-      <div class="aspect-video w-2/5">
-        <img
-          class="h-full w-full object-contain"
-          src="@/assets/portfolio/floor_check_report/floor_check_report-slide2.webp"
-        />
-      </div>
-      <div class="w-3/5">
+    <div class="mt-16 items-start gap-10 md:flex">
+      <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
           This project was built using PHP and HTML/CSS/JS. I didn't know to use
@@ -58,6 +52,12 @@
           The application ins't the prettiest, but it was only meant for me and
           the other team leads, so I didn't care too much.
         </p>
+      </div>
+      <div class="order-1 aspect-video md:w-2/5">
+        <img
+          class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
+          src="../../assets/portfolio/floor_check_report/floor_check_report-slide2.webp"
+        />
       </div>
     </div>
   </article>

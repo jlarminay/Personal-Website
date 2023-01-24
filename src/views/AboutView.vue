@@ -1,6 +1,6 @@
 <template>
-  <section class="flex justify-center">
-    <div class="w-[600px] p-5">
+  <section class="justify-center md:flex">
+    <div class="p-5 md:w-[600px]">
       <h1>A bit about me.</h1>
       <p>
         Hi I'm Josh Larminay. I'm a full stack developer from Victoria BC
@@ -15,7 +15,7 @@
       </p>
       <p>
         After high-school, I attended Camosun College for a year to learn
-        computer science. After this I was approached by a friend to form our
+        computer science. After this I partnered with some friends to start our
         own company where I have been working since 2018.
       </p>
 
@@ -26,7 +26,7 @@
         <li>🖌 I'm a beautiful artist. Can't you tell.</li>
       </ul>
     </div>
-    <div class="w-[400px] p-10">
+    <div class="mx-auto w-[400px] max-w-[80%] p-10">
       <img src="@/assets/josh-cat.png" class="w-full" />
     </div>
   </section>

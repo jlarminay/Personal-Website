@@ -53,10 +53,16 @@ async function updateTitle() {
 </script>
 
 <template>
-  <section class="flex items-center justify-center">
+  <section class="items-center justify-center sm:flex">
     <div>
-      <div id="image">
-        <img src="@/assets/josh-chin.png" class="relative z-10 m-5 w-full" />
+      <div
+        id="image"
+        class="relative flex justify-center overflow-hidden sm:w-[330px] md:w-[400px] lg:w-[500px]"
+      >
+        <img
+          src="@/assets/josh-chin.png"
+          class="relative z-10 m-5 w-[80%] sm:w-full"
+        />
         <img
           src="@/assets/gradient.png"
           id="background-spin"
@@ -64,13 +70,17 @@ async function updateTitle() {
         />
       </div>
     </div>
-    <div class="grow p-5">
-      <div class="mb-4 flex items-center justify-start text-4xl">
+    <div class="grow p-5 text-center sm:text-left">
+      <div
+        class="mb-4 flex items-center justify-center text-4xl sm:justify-start"
+      >
         <h1 class="m-0">Hey I'm Josh.</h1>
         <span id="hand-wave" class="cursor-grab">👋</span>
       </div>
-      <div class="mb-10 flex h-[36px] items-center justify-start">
-        <h2 class="m-0 text-3xl">I'm a {{ title }}</h2>
+      <div
+        class="mb-10 flex h-[36px] items-center justify-center sm:justify-start"
+      >
+        <h2 class="m-0 text-2xl md:text-3xl">I'm a {{ title }}</h2>
         <div id="cursor" class="ml-2 h-full w-[2px] bg-white"></div>
       </div>
       <a class="btn" href="mailto:j.larminay@gmail.com">Get in touch.</a>
@@ -117,11 +127,11 @@ async function updateTitle() {
 }
 
 #image {
-  @apply relative w-[500px] flex justify-center;
   -webkit-mask-image: url(@/assets/blobanimation.svg);
   mask-image: url(@/assets/blobanimation.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  mask-position: center center;
 }
 #background-spin {
   animation: background-spin 6s linear infinite;

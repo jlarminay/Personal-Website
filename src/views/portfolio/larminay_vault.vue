@@ -1,14 +1,14 @@
 <template>
   <article class="p-5">
-    <div class="flex items-center justify-between">
+    <div class="items-center justify-between text-center md:flex md:text-left">
       <h1 class="mb-0">Larminay Vault.</h1>
-      <div>
+      <div class="my-6 md:my-0">
         <a class="btn ml-5 hidden" href="" target="_blank">View GitHub.</a>
         <a class="btn ml-5 hidden" href="" target="_blank">View project.</a>
       </div>
     </div>
-    <div class="mt-16 flex items-start gap-10">
-      <div class="w-3/5">
+    <div class="mt-16 items-start gap-10 md:flex">
+      <div class="md:w-3/5">
         <h3>About.</h3>
         <p>
           I've always been fascinated with media archival such as
@@ -41,21 +41,15 @@
           the videos as well.
         </p>
       </div>
-      <div class="aspect-video w-2/5">
+      <div class="aspect-video md:w-2/5">
         <img
-          class="h-full w-full object-contain"
-          src="@/assets/portfolio/larminay_vault/larminay_vault-slide1.webp"
+          class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
+          src="../../assets/portfolio/larminay_vault/larminay_vault-slide1.webp"
         />
       </div>
     </div>
-    <div class="mt-16 flex items-start gap-10">
-      <div class="aspect-video w-2/5">
-        <img
-          class="h-full w-full object-contain"
-          src="@/assets/portfolio/larminay_vault/larminay_vault-slide2.webp"
-        />
-      </div>
-      <div class="w-3/5">
+    <div class="mt-16 items-start gap-10 md:flex">
+      <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
           This project was built using a basic LAMP stack (Linux, Apache, MySQL,
@@ -70,6 +64,12 @@
           mobile support and the ability for users to upload their own videos.
           The next thing would be to allow the app to save images and documents.
         </p>
+      </div>
+      <div class="order-1 aspect-video md:w-2/5">
+        <img
+          class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
+          src="../../assets/portfolio/larminay_vault/larminay_vault-slide2.webp"
+        />
       </div>
     </div>
   </article>

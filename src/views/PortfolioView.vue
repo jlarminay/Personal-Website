@@ -57,7 +57,7 @@ function displayItem(projectItem) {
         :to="{ name: 'Portfolio/' + project.id }"
         v-for="(project, index) in projects"
         :key="index"
-        class="group relative m-3 h-[175px] w-[300px] overflow-hidden transition-all duration-500 before:hidden"
+        class="group relative aspect-video w-full overflow-hidden p-5 transition-all duration-500 before:hidden sm:w-1/2 lg:w-1/3"
         :class="{ hidden: !displayItem(project) }"
       >
         <img

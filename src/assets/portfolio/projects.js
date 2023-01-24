@@ -45,7 +45,7 @@ export default [
     id: 'victoria_titan',
     name: 'Victoria Titan',
     tags: ['JS.', 'HTML.', 'CSS.'],
-    frontImage: '1280x720.webp',
+    frontImage: 'victoria_titan/victoria_titan-slide1.webp',
   },
   {
     id: 'floor_check_report',

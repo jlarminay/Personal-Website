@@ -1,8 +1,8 @@
 <template>
   <article class="p-5">
-    <div class="flex items-center justify-between">
+    <div class="items-center justify-between text-center md:flex md:text-left">
       <h1 class="mb-0">Swords n Souls.</h1>
-      <div>
+      <div class="my-6 md:my-0">
         <a
           class="btn ml-5"
           href="https://github.com/jlarminay/Swords-n-Souls"
@@ -17,8 +17,8 @@
         >
       </div>
     </div>
-    <div class="mt-16 flex items-start gap-10">
-      <div class="w-3/5">
+    <div class="mt-16 items-start gap-10 md:flex">
+      <div class="md:w-3/5">
         <h3>Story.</h3>
         <p>
           With your soul transferred into your trusty sword, there is only one
@@ -30,21 +30,15 @@
           shrine for salvation.
         </p>
       </div>
-      <div class="aspect-video w-2/5">
+      <div class="aspect-video md:w-2/5">
         <img
-          class="h-full w-full object-contain"
+          class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
           src="../../assets/portfolio/swords_n_souls/swords_n_souls-slide1.webp"
         />
       </div>
     </div>
-    <div class="mt-16 flex items-start gap-10">
-      <div class="aspect-video w-2/5">
-        <img
-          class="h-full w-full object-contain"
-          src="../../assets/portfolio/swords_n_souls/swords_n_souls-slide2.webp"
-        />
-      </div>
-      <div class="w-3/5">
+    <div class="mt-16 items-start gap-10 md:flex">
+      <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
           This project was made for the
@@ -73,6 +67,12 @@
           </a>
           which can be read on the game page.
         </p>
+      </div>
+      <div class="order-1 aspect-video md:w-2/5">
+        <img
+          class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
+          src="../../assets/portfolio/swords_n_souls/swords_n_souls-slide2.webp"
+        />
       </div>
     </div>
   </article>

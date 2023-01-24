@@ -1,11 +1,13 @@
 <template>
-  <menu class="mt-5 mb-10 flex items-center justify-between text-center">
+  <menu
+    class="mt-5 mb-10 items-center justify-between px-5 text-center sm:flex"
+  >
     <router-link :to="{ name: 'HomeView' }" class="before:hidden">
       <div class="p-2 font-['Montserrat'] text-4xl font-black text-white">
         Josh Larminay.
       </div>
     </router-link>
-    <nav>
+    <nav class="w-full sm:relative sm:w-auto md:w-auto">
       <router-link :to="{ name: 'HomeView' }">Home.</router-link>
       <router-link :to="{ name: 'AboutView' }">About.</router-link>
       <router-link :to="{ name: 'SkillsView' }">Skills.</router-link>

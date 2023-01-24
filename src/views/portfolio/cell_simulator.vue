@@ -1,8 +1,8 @@
 <template>
   <article class="p-5">
-    <div class="flex items-center justify-between">
+    <div class="items-center justify-between text-center md:flex md:text-left">
       <h1 class="mb-0">Cell Simulator.</h1>
-      <div>
+      <div class="my-6 md:my-0">
         <a
           class="btn ml-5"
           href="https://github.com/jlarminay/cell-simulator"
@@ -17,8 +17,8 @@
         >
       </div>
     </div>
-    <div class="mt-16 flex items-start gap-10">
-      <div class="w-3/5">
+    <div class="mt-16 items-start gap-10 md:flex">
+      <div class="md:w-3/5">
         <h3>About.</h3>
         <p>
           Honestly, there isn't much to this project. My goal was to create a
@@ -37,21 +37,15 @@
           still a fun project to look at and try to predict who will win.
         </p>
       </div>
-      <div class="aspect-video w-2/5">
+      <div class="aspect-video md:w-2/5">
         <img
-          class="h-full w-full object-contain"
+          class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
           src="../../assets/portfolio/cell_simulator/cell_simulator-slide1.webp"
         />
       </div>
     </div>
-    <div class="mt-16 flex items-start gap-10">
-      <div class="aspect-video w-2/5">
-        <img
-          class="h-full w-full object-contain"
-          src="../../assets/portfolio/cell_simulator/cell_simulator-slide2.webp"
-        />
-      </div>
-      <div class="w-3/5">
+    <div class="mt-16 items-start gap-10 md:flex">
+      <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
           This project is very simplistic for code. Primarily built using JS,
@@ -63,6 +57,12 @@
           editor that allows me to create maps with set spawn points and
           impassible walls. It also allowed me to edit each team's stats.
         </p>
+      </div>
+      <div class="order-1 aspect-video md:w-2/5">
+        <img
+          class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
+          src="../../assets/portfolio/cell_simulator/cell_simulator-slide2.webp"
+        />
       </div>
     </div>
   </article>
