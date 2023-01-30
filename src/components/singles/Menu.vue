@@ -1,6 +1,6 @@
 <template>
   <menu
-    class="mt-5 mb-10 items-center justify-between px-5 text-center sm:flex"
+    class="mt-5 mb-10 items-center justify-between px-0 text-center sm:flex md:px-5"
   >
     <router-link :to="{ name: 'HomeView' }" class="before:hidden">
       <div class="p-2 font-['Montserrat'] text-4xl font-black text-white">

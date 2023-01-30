@@ -1,11 +1,11 @@
 <template>
   <article class="p-5">
-    <div class="items-center justify-between text-center md:flex md:text-left">
+    <div class="items-center justify-between text-left md:flex">
       <h1 class="mb-0">Floor Check Report.</h1>
-      <div class="my-6 md:my-0">
-        <a class="btn ml-5 hidden" href="" target="_blank">View GitHub.</a>
+      <div class="my-6 flex gap-5 md:my-0">
+        <a class="btn hidden" href="" target="_blank">View GitHub.</a>
         <a
-          class="btn ml-5"
+          class="btn"
           href="https://projects.joshlarminay.com/floor_check_report/"
           target="_blank"
           >View project.</a
@@ -35,7 +35,7 @@
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="../../assets/portfolio/floor_check_report/floor_check_report-slide1.webp"
+          src="/portfolio/floor_check_report/floor_check_report-slide1.webp"
         />
       </div>
     </div>
@@ -56,7 +56,7 @@
       <div class="order-1 aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="../../assets/portfolio/floor_check_report/floor_check_report-slide2.webp"
+          src="/portfolio/floor_check_report/floor_check_report-slide2.webp"
         />
       </div>
     </div>

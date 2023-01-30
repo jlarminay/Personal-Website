@@ -1,15 +1,15 @@
 <template>
   <article class="p-5">
-    <div class="items-center justify-between text-center md:flex md:text-left">
+    <div class="items-center justify-between text-left md:flex">
       <h1 class="mb-0">AI Dino Runner.</h1>
-      <div class="my-6 md:my-0">
+      <div class="my-6 flex gap-5 md:my-0">
         <a
-          class="btn ml-5"
+          class="btn"
           href="https://github.com/jlarminay/ai-dino-runner"
           target="_blank"
           >View GitHub.</a
         >
-        <a class="btn ml-5 hidden" href="" target="_blank">View project.</a>
+        <a class="btn hidden" href="" target="_blank">View project.</a>
       </div>
     </div>
     <div class="mt-16 items-start gap-10 md:flex">
@@ -25,7 +25,7 @@
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="../../assets/portfolio/ai_dino_runner/ai_dino_runner-slide2.webp"
+          src="/portfolio/ai_dino_runner/ai_dino_runner-slide2.webp"
         />
       </div>
     </div>
@@ -33,16 +33,16 @@
       <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
-          I build this using Python and Selenium. I start by launching the
-          browser and grabbing some screenshots. Then I look for all obstacles
-          and figure out their distance from the Dino. From there I can
-          determine when to jump.
+          I build this using Python and Selenium. The code first launches the
+          browser and start the game. A few times every second a screenshot is
+          taken and analyzed to find obstacles. As stated, currently it only
+          sees if an obstacle is in front of the dino to jump.
         </p>
       </div>
       <div class="order-1 aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="../../assets/portfolio/ai_dino_runner/ai_dino_runner-slide3.webp"
+          src="/portfolio/ai_dino_runner/ai_dino_runner-slide3.webp"
         />
       </div>
     </div>

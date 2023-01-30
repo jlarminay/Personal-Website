@@ -60,7 +60,7 @@ async function updateTitle() {
         class="relative flex justify-center overflow-hidden sm:w-[330px] md:w-[400px] lg:w-[500px]"
       >
         <img
-          src="@/assets/josh-chin.png"
+          src="/images/josh-chin.png"
           class="relative z-10 m-5 w-[80%] sm:w-full"
         />
         <img
@@ -94,7 +94,7 @@ async function updateTitle() {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
   }
   100% {
     transform: rotate(360deg);

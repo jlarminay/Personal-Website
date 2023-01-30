@@ -1,10 +1,10 @@
 <template>
   <article class="p-5">
-    <div class="items-center justify-between text-center md:flex md:text-left">
+    <div class="items-center justify-between text-left md:flex">
       <h1 class="mb-0">Personal Website.</h1>
-      <div class="my-6 md:my-0">
-        <a class="btn ml-5 hidden" href="" target="_blank">View GitHub.</a>
-        <a class="btn ml-5 hidden" href="" target="_blank">View project.</a>
+      <div class="my-6 flex gap-5 md:my-0">
+        <a class="btn hidden" href="" target="_blank">View GitHub.</a>
+        <a class="btn hidden" href="" target="_blank">View project.</a>
       </div>
     </div>
     <div class="mt-16 items-start gap-10 md:flex">
@@ -12,30 +12,18 @@
         <h3>About.</h3>
         <p>
           Not much to say about this. This is my personal website. I always try
-          to update or re-create my portoflio every few years to saty up to
-          date.
+          to update or re-create my portfolio every few years to try new design
+          trends or ideas.
+        </p>
+        <p>
+          The site is built using Vue, Node and Tailwind and deployed to
+          FullHost automatically using GitHub actions.
         </p>
       </div>
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="@/assets/portfolio/personal_website/personal_website-slide1.webp"
-        />
-      </div>
-    </div>
-    <div class="mt-16 items-start gap-10 md:flex">
-      <div class="order-2 md:w-3/5">
-        <h3>Development.</h3>
-        <p>
-          This site is using Vue and Tailwind as a base. I'm using GitHub
-          Actions to deploy the built website to Fullhost. I decided to go with
-          a dark theme as default this time.
-        </p>
-      </div>
-      <div class="order-1 aspect-video md:w-2/5">
-        <img
-          class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="@/assets/portfolio/personal_website/personal_website-slide2.webp"
+          src="/portfolio/personal_website/personal_website-slide1.webp"
         />
       </div>
     </div>

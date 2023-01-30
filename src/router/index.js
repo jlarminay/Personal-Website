@@ -11,4 +11,8 @@ const router = createRouter({
   routes: [...Pages, ...Portfolio],
 })
 
+router.afterEach((to, from) => {
+  document.title = to.meta.title || 'Josh Larminay'
+})
+
 export default router

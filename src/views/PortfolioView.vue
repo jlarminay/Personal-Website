@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import AllProjects from '@/assets/portfolio/projects.js'
+import AllProjects from '@/assets/portfolioProjects.js'
 
 let search = ref('')
 let projects = ref(AllProjects)
@@ -61,7 +61,7 @@ function displayItem(projectItem) {
         :class="{ hidden: !displayItem(project) }"
       >
         <img
-          :src="'assets/portfolio/' + project.frontImage"
+          :src="'/portfolio/' + project.frontImage"
           class="absolute h-full w-full object-cover blur-[2px] brightness-[0.4] transition-all group-hover:blur-0"
         />
         <div
