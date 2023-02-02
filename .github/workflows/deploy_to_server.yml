@@ -56,24 +56,24 @@ jobs:
           password: ${{ secrets.FTP_PASS }}
           port: 21
           local-dir: "./dist/"
-          server-dir: "/public_html/tmp/"
+          server-dir: "/public_html/"
           dry-run: false
   
-  remove_files:
-    name: Remove unused files from remote server
-    needs: upload_files
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+  # remove_files:
+  #   name: Remove unused files from remote server
+  #   needs: upload_files
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
 
-      - uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          key: ${{ secrets.SSH_KEY }}
-          port: 22
-          script: |
-            cd ~/public_html;
-            find ~/public_html -mindepth 1 -not \( -name "tmp" -o -name ".well-known" \) -delete;
-            mv ~/public_html/tmp/* ~/public_html;
+  #     - uses: appleboy/ssh-action@master
+  #       with:
+  #         host: ${{ secrets.FTP_HOST }}
+  #         username: ${{ secrets.FTP_USER }}
+  #         password: ${{ secrets.FTP_PASS }}
+  #         key: ${{ secrets.SSH_KEY }}
+  #         port: 22
+  #         script: |
+  #           cd ~/public_html;
+  #           find ~/public_html -mindepth 1 -not \( -name "tmp" -o -name ".well-known" \) -delete;
+  #           mv ~/public_html/tmp/* ~/public_html;
