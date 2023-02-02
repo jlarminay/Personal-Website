@@ -5,7 +5,7 @@ import Footer from '@/components/singles/Footer.vue'
 
 <template>
   <Menu />
-  <main class="grow p-5">
+  <main class="grow p-0 md:p-5">
     <!-- <router-view v-slot="{ Component }">
       <transition name="fade">
         <component :is="Component" />

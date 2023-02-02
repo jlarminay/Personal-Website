@@ -60,13 +60,13 @@ async function updateTitle() {
         class="relative flex justify-center overflow-hidden sm:w-[330px] md:w-[400px] lg:w-[500px]"
       >
         <img
-          src="@/assets/josh-chin.png"
+          src="/images/josh-chin.png"
           class="relative z-10 m-5 w-[80%] sm:w-full"
         />
         <img
-          src="@/assets/gradient.png"
+          src="@/assets/gradient.webp"
           id="background-spin"
-          class="absolute top-0 left-0 h-full w-full"
+          class="absolute top-0 left-0 h-full w-full blur-lg"
         />
       </div>
     </div>
@@ -94,7 +94,7 @@ async function updateTitle() {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
   }
   100% {
     transform: rotate(360deg);
@@ -134,7 +134,7 @@ async function updateTitle() {
   mask-position: center center;
 }
 #background-spin {
-  animation: background-spin 6s linear infinite;
+  animation: background-spin 30s linear infinite;
 }
 #hand-wave:hover {
   animation: hand-wave 0.5s linear infinite;

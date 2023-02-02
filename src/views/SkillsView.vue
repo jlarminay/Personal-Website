@@ -40,24 +40,14 @@ let icons = ref([
             :key="index"
             class="group relative m-3 w-[75px]"
           >
-            <!-- <img
-              :src="'assets/logos/' + icon + '.svg'"
-              :alt="icon"
-              :title="icon"
-              class="absolute top-0 z-10 blur-none transition-all group-hover:blur-sm"
-            />
-            <img
-              :src="'assets/logos/' + icon + '.svg'"
-              class="relative top-0 z-20 fill-none stroke-black stroke-1"
-            /> -->
             <InlineSvg
-              :src="'assets/logos/' + icon + '.svg'"
+              :src="'/images/logos/' + icon + '.svg'"
               :alt="icon"
               :title="icon"
               class="absolute top-0 z-10 h-full w-full blur-none transition-all group-hover:blur-sm"
             />
             <InlineSvg
-              :src="'assets/logos/' + icon + '.svg'"
+              :src="'/images/logos/' + icon + '.svg'"
               :alt="icon"
               :title="icon"
               class="relative top-0 z-20 h-full w-full"
@@ -79,7 +69,7 @@ let icons = ref([
       </div>
     </div>
     <div class="order-1 mx-auto w-[400px] max-w-[80%] p-10 md:w-[350px]">
-      <img src="@/assets/josh-point.png" class="w-full" />
+      <img src="/images/josh-point.png" class="w-full" />
     </div>
   </section>
 </template>

@@ -8,20 +8,24 @@ export default [
     path: '/',
     name: 'HomeView',
     component: HomeView,
+    meta: { title: 'Josh Larminay.' },
   },
   {
     path: '/about',
     name: 'AboutView',
     component: AboutView,
+    meta: { title: 'About. | Josh Larminay.' },
   },
   {
     path: '/skills',
     name: 'SkillsView',
     component: SkillsView,
+    meta: { title: 'Skills. | Josh Larminay.' },
   },
   {
     path: '/portfolio',
     name: 'PortfolioView',
     component: PortfolioView,
+    meta: { title: 'Portfolio. | Josh Larminay.' },
   },
 ]

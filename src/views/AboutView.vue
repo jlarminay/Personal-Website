@@ -27,7 +27,7 @@
       </ul>
     </div>
     <div class="mx-auto w-[400px] max-w-[80%] p-10">
-      <img src="@/assets/josh-cat.png" class="w-full" />
+      <img src="/images/josh-cat.png" class="w-full" />
     </div>
   </section>
 </template>
