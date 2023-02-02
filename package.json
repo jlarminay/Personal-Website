@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite --port 80 --host",
-    "build": "vite-ssg build",
+    "build": "vite build",
     "preview": "yarn build && vite preview --port 8080 --host",
     "sitemap": "start-server-and-test preview http://localhost:8080 sitemap:generate && yarn sitemap:replace",
     "sitemap:generate": "sitemap-generator http://localhost:8080 -v -f public/sitemap.xml",
