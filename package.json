@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "vite --port 80 --host",
-    "build": "vite build",
-    "preview": "vite preview --port 8080 --host",
-
+    "build": "vite-ssg build",
+    "preview": "yarn build && vite preview --port 8080 --host",
     "sitemap": "start-server-and-test preview http://localhost:8080 sitemap:generate && yarn sitemap:replace",
     "sitemap:generate": "sitemap-generator http://localhost:8080 -v -f public/sitemap.xml",
     "sitemap:replace": "replace-in-files --string='http://localhost:8080' --replacement='https://joshlarminay.com' ./public/sitemap.xml"
