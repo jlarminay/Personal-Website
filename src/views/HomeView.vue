@@ -66,7 +66,7 @@ async function updateTitle() {
         <img
           src="@/assets/gradient.webp"
           id="background-spin"
-          class="absolute top-0 left-0 h-full w-full blur-[20px]"
+          class="absolute top-0 left-0 h-full w-full blur-lg"
         />
       </div>
     </div>
