@@ -22,7 +22,7 @@
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/portfolio/arcade_machine/arcade_machine-slide1.webp"
+          src="/items/arcade_machine/arcade_machine-slide1.webp"
         />
       </div>
     </div>
@@ -52,7 +52,7 @@
       <div class="order-1 aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/portfolio/arcade_machine/arcade_machine-slide4.webp"
+          src="/items/arcade_machine/arcade_machine-slide4.webp"
         />
       </div>
     </div>
@@ -61,23 +61,23 @@
       <div class="flex items-start gap-2 md:gap-10">
         <img
           class="h-full w-full object-cover"
-          src="/portfolio/arcade_machine/arcade_machine-slide5.webp"
+          src="/items/arcade_machine/arcade_machine-slide5.webp"
         />
         <img
           class="h-full w-full object-cover"
-          src="/portfolio/arcade_machine/arcade_machine-slide2.webp"
+          src="/items/arcade_machine/arcade_machine-slide2.webp"
         />
         <img
           class="h-full w-full object-contain"
-          src="/portfolio/arcade_machine/arcade_machine-slide7.webp"
+          src="/items/arcade_machine/arcade_machine-slide7.webp"
         />
         <img
           class="h-full w-full object-contain"
-          src="/portfolio/arcade_machine/arcade_machine-slide9.webp"
+          src="/items/arcade_machine/arcade_machine-slide9.webp"
         />
         <img
           class="h-full w-full object-contain"
-          src="/portfolio/arcade_machine/arcade_machine-slide10.webp"
+          src="/items/arcade_machine/arcade_machine-slide10.webp"
         />
       </div>
     </div>

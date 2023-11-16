@@ -61,7 +61,7 @@ function displayItem(projectItem) {
         :class="{ hidden: !displayItem(project) }"
       >
         <img
-          :src="'/portfolio/' + project.frontImage"
+          :src="'/items/' + project.frontImage"
           class="absolute h-full w-full object-cover blur-[2px] brightness-[0.4] transition-all group-hover:blur-0"
         />
         <div

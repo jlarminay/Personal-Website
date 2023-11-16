@@ -23,7 +23,7 @@
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/portfolio/personal_website/personal_website-slide1.webp"
+          src="/items/personal_website/personal_website-slide1.webp"
         />
       </div>
     </div>
