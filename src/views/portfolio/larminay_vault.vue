@@ -44,7 +44,7 @@
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/portfolio/larminay_vault/larminay_vault-slide1.webp"
+          src="/items/larminay_vault/larminay_vault-slide1.webp"
         />
       </div>
     </div>
@@ -68,7 +68,7 @@
       <div class="order-1 aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/portfolio/larminay_vault/larminay_vault-slide2.webp"
+          src="/items/larminay_vault/larminay_vault-slide2.webp"
         />
       </div>
     </div>
