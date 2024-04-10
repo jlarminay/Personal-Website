@@ -1,6 +1,6 @@
-<script setup>
-import { ref } from 'vue'
-import InlineSvg from 'vue-inline-svg'
+<script setup lang="ts">
+import { ref } from 'vue';
+import InlineSvg from 'vue-inline-svg';
 
 let icons = ref([
   'vuejs',
@@ -14,7 +14,7 @@ let icons = ref([
   'php',
   'postgresql',
   'tailwindcss',
-])
+]);
 </script>
 
 <template>
@@ -23,10 +23,7 @@ let icons = ref([
       <div class="mb-10">
         <h1>Some skills and stuff.</h1>
         <ul class="hidden">
-          <li>
-            Learn some Infrastructure as Code (IaC) tools like Terraform and
-            Ansible.
-          </li>
+          <li>Learn some Infrastructure as Code (IaC) tools like Terraform and Ansible.</li>
           <li>Learning mobile development with Flutter.</li>
           <li>I want to make more games with Godot.</li>
         </ul>
@@ -35,11 +32,7 @@ let icons = ref([
       <div class="mb-5">
         <h2>My favorite languages and tools.</h2>
         <div class="mb-7 flex flex-wrap justify-start">
-          <div
-            v-for="(icon, index) in icons"
-            :key="index"
-            class="group relative m-3 w-[75px]"
-          >
+          <div v-for="(icon, index) in icons" :key="index" class="group relative m-3 w-[75px]">
             <InlineSvg
               :src="'/images/logos/' + icon + '.svg'"
               :alt="icon"
@@ -59,10 +52,7 @@ let icons = ref([
       <div>
         <h2>What I'm doing next.</h2>
         <ul>
-          <li>
-            Learn some Infrastructure as Code (IaC) tools like Terraform and
-            Ansible.
-          </li>
+          <li>Learn some Infrastructure as Code (IaC) tools like Terraform and Ansible.</li>
           <li>Learning mobile development with Flutter.</li>
           <li>I want to make more games with Godot.</li>
         </ul>
@@ -74,4 +64,4 @@ let icons = ref([
   </section>
 </template>
 
-<style scoped lang="postcss"></style>
+<style scoped></style>

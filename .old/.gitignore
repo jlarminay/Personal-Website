@@ -1,0 +1,8 @@
+# Logs
+yarn-debug.log*
+yarn-error.log*
+
+.vite-ssg-temp
+
+node_modules
+dist

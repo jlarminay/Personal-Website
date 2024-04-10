@@ -1,16 +1,9 @@
-# Personal Website
+# Vue 3 + TypeScript + Vite
 
-My personal portfolio built using Vue3 and a custom theme built with Tailwind.
+This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup lang="ts">` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Getting started
+## Recommended Setup
 
-Requirements:
-* `node 18.12.1`
-* `yarn 1.22.19`
+- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
 
-Running the website can be done by running:
-```bash
-yarn dev
-```
-
-Then you can access the site at `http://localhost:80`. There shouldn't be any other requirements since this project is meant to act as a static html site with no furthur requirements.
+- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.

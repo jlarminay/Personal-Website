@@ -11,23 +11,22 @@
       <div class="md:w-3/5">
         <h3>About.</h3>
         <p>
-          Not much to say about this. This is my personal website. I always try
-          to update or re-create my portfolio every few years to try new design
-          trends or ideas.
+          Not much to say about this. This is my personal website. I always try to update or
+          re-create my portfolio every few years to try new design trends or ideas.
         </p>
         <p>
-          The site is built using Vue, Node and Tailwind and deployed to
-          FullHost automatically using GitHub actions.
+          The site is built using Vue, Node and Tailwind and deployed to FullHost automatically
+          using GitHub actions.
         </p>
       </div>
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/items/personal_website/personal_website-slide1.webp"
+          src="/images/portfolio/personal_website/personal_website-slide1.webp"
         />
       </div>
     </div>
   </article>
 </template>
 
-<style scoped lang="postcss"></style>
+<style scoped></style>

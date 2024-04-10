@@ -1,9 +1,9 @@
-<script setup>
-import { ref } from 'vue'
-import AllProjects from '@/assets/portfolioProjects.js'
+<script setup lang="ts">
+import { ref } from 'vue';
+import AllProjects from '@/assets/portfolioProjects.js';
 
-let search = ref('')
-let projects = ref(AllProjects)
+let search = ref('');
+let projects = ref(AllProjects);
 let tagColors = ref({
   'Godot.': '#478cbf',
   'JS.': '#c3ab00',
@@ -18,19 +18,14 @@ let tagColors = ref({
   'Vue.': '#41b883',
   'Node.': '#83cd29',
   'Tailwind.': '#38b2ac',
-})
+});
 
 function displayItem(projectItem) {
-  if (search.value.length === 0) return true
-  if (projectItem.name.toLowerCase().includes(search.value.toLowerCase()))
-    return true
-  if (
-    projectItem.tags.some((tag) =>
-      tag.toLowerCase().includes(search.value.toLowerCase()),
-    )
-  )
-    return true
-  return false
+  if (search.value.length === 0) return true;
+  if (projectItem.name.toLowerCase().includes(search.value.toLowerCase())) return true;
+  if (projectItem.tags.some((tag) => tag.toLowerCase().includes(search.value.toLowerCase())))
+    return true;
+  return false;
 }
 </script>
 
@@ -40,10 +35,10 @@ function displayItem(projectItem) {
     <p>
       Here are some of my favourite projects and more can be seen on my
       <a href="https://github.com/jlarminay" target="_blank">GitHub</a> or
-      <a href="https://jlarminay.itch.io/" target="_blank">itch.io</a>. Due to a
-      busy schedule running my business, I have limited time to spend on
-      personal projects. However, through my work, I have opportunities to work
-      with new technologies but am unable to share those projects in detail.
+      <a href="https://jlarminay.itch.io/" target="_blank">itch.io</a>. Due to a busy schedule
+      running my business, I have limited time to spend on personal projects. However, through my
+      work, I have opportunities to work with new technologies but am unable to share those projects
+      in detail.
     </p>
     <!-- <div class="text-center">
       <input
@@ -61,7 +56,7 @@ function displayItem(projectItem) {
         :class="{ hidden: !displayItem(project) }"
       >
         <img
-          :src="'/items/' + project.frontImage"
+          :src="'/images/portfolio/' + project.frontImage"
           class="absolute h-full w-full object-cover blur-[2px] brightness-[0.4] transition-all group-hover:blur-0"
         />
         <div
@@ -84,4 +79,4 @@ function displayItem(projectItem) {
   </section>
 </template>
 
-<style scoped lang="postcss"></style>
+<style scoped></style>
