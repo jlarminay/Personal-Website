@@ -7,12 +7,12 @@ export default [
   {
     id: 'personal_website',
     name: 'Gathering Our Voices.',
-    poster: 'personal_website/personal_website-slide1.webp',
+    poster: '_placeholders/800x400.svg',
   },
   {
     id: 'personal_website',
     name: "Lu'ma Native Housing Society.",
-    poster: 'personal_website/personal_website-slide1.webp',
+    poster: '_placeholders/600x400.svg',
   },
   {
     id: 'larminay_vault',
@@ -27,12 +27,17 @@ export default [
   {
     id: 'personal_website',
     name: 'ELST.',
-    poster: 'personal_website/personal_website-slide1.webp',
+    poster: '_placeholders/400x600.svg',
+  },
+  {
+    id: 'personal_website',
+    name: 'Guess The Movie.',
+    poster: '_placeholders/384x216.svg',
   },
   {
     id: 'personal_website',
     name: 'ISPARC.',
-    poster: 'personal_website/personal_website-slide1.webp',
+    poster: '_placeholders/600x700.svg',
   },
   {
     id: 'ai_dino_runner',

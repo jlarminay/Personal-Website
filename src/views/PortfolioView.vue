@@ -82,8 +82,8 @@ detectImageRows();
   <section class="p-5">
     <h1>Cool projects I've done.</h1>
     <p>
-      Here are some projects i've worked on in the past. Some are ongoing, some I did with for work
-      and some and simply because i liked the idea of it.
+      Here are some projects I've worked on in the past. Some are ongoing, some I did at work and
+      some and simply because I liked the idea of it.
     </p>
     <p>
       More projects can be found on my
