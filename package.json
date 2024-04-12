@@ -8,7 +8,7 @@
     "build": "vue-tsc && vite build",
     "preview": "npm run build && vite preview --port 6161",
     "sitemap": "start-server-and-test preview http://localhost:6161 sitemap:generate && npm run sitemap:replace",
-    "sitemap:generate": "sitemap-generator http://localhost:6161 -v -f public/sitemap.xml",
+    "sitemap:generate": "sitemap-generator http://localhost:6161 -v -r -f public/sitemap.xml",
     "sitemap:replace": "replace-in-files --string='http://localhost:6161' --replacement='https://joshlarminay.com' ./public/sitemap.xml"
   },
   "dependencies": {

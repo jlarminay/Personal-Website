@@ -14,7 +14,7 @@
         <a href="https://jlarminay.itch.io/" target="_blank">itch.io.</a>
       </li>
     </ul>
-    <p class="m-0 mt-2 text-sm">© 2015-2023 Josh Larminay. All Rights Reserved.</p>
+    <p class="m-0 mt-2 text-sm">© 2015-2024 Josh Larminay. All Rights Reserved.</p>
   </footer>
 </template>
 
