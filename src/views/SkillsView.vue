@@ -14,6 +14,7 @@ let icons = ref([
   'php',
   'postgresql',
   'tailwindcss',
+  'terraform',
 ]);
 </script>
 
@@ -47,15 +48,6 @@ let icons = ref([
             />
           </div>
         </div>
-      </div>
-
-      <div>
-        <h2>What I'm doing next.</h2>
-        <ul>
-          <li>Learn some Infrastructure as Code (IaC) tools like Terraform and Ansible.</li>
-          <li>Learning mobile development with Flutter.</li>
-          <li>I want to make more games with Godot.</li>
-        </ul>
       </div>
     </div>
     <div class="order-1 mx-auto w-[400px] max-w-[80%] p-10 md:w-[350px]">
