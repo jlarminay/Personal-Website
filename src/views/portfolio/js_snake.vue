@@ -1,38 +1,46 @@
+<script setup lang="ts"></script>
+
 <template>
   <article class="p-5">
     <div class="items-center justify-between text-left md:flex">
       <h1 class="mb-0">JS Snake.</h1>
       <div class="my-6 flex gap-5 md:my-0">
-        <a class="btn" href="https://github.com/jlarminay/js-snake-game" target="_blank"
-          >View GitHub.</a
-        >
-        <a class="btn" href="https://projects.joshlarminay.com/js-snake/" target="_blank"
-          >View project.</a
-        >
+        <a class="btn" href="https://github.com/jlarminay/js-snake-game" target="_blank">
+          View GitHub.
+        </a>
+        <a class="btn" href="https://projects.joshlarminay.com/js-snake/" target="_blank">
+          View project.
+        </a>
       </div>
     </div>
-    <div class="mt-16 items-start gap-10 md:flex">
+
+    <div class="mt-16 md:flex gap-4 justify-start">
+      <!-- text -->
       <div class="md:w-3/5">
         <h3>About.</h3>
         <p>
           My company was invited to a youth-focused event as an exhibitor, and we wanted a cool
-          project to get youth excited about computer science. We decided upon showing Battle Snake,
-          but as that required strong internet, we needed an offline version. As an experiment, I
-          decided to recreate a small version of it in JS.
+          project to get youth excited about computer science. We decided upon showing
+          <a href="https://play.battlesnake.com/">BattleSnake</a>, but as that required strong
+          internet, we needed an offline version. As an experiment, I decided to recreate a small
+          version of it in JS.
         </p>
         <p>
           Unfortunately, it wouldn't have been possible for the attendants to code their own snakes,
           but at least it showed the concept.
         </p>
       </div>
+      <!-- image -->
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/js_snake/js_snake-slide1.webp"
+          src="/images/portfolio/js_snake/slide1.webp"
         />
       </div>
     </div>
-    <div class="mt-16 items-start gap-10 md:flex">
+
+    <div class="mt-16 md:flex gap-4 justify-start">
+      <!-- text -->
       <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
@@ -48,10 +56,11 @@
           ability for a human player.
         </p>
       </div>
+      <!-- image -->
       <div class="order-1 aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/js_snake/js_snake-slide2.webp"
+          src="/images/portfolio/js_snake/slide2.webp"
         />
       </div>
     </div>

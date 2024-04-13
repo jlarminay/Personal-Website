@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import AllProjects from '@/assets/portfolioProjects.ts';
+
+const timerInterval = ref<any>(null);
 
 onMounted(() => {
   // on screen update, detect image rows
@@ -13,9 +15,12 @@ onMounted(() => {
     true,
   );
   // every 500ms, detect image rows
-  setInterval(() => {
+  timerInterval.value = setInterval(() => {
     detectImageRows();
   }, 500);
+});
+onUnmounted(() => {
+  clearInterval(timerInterval.value);
 });
 
 function detectImageRows() {

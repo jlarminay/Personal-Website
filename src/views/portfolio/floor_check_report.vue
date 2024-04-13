@@ -1,15 +1,19 @@
+<script setup lang="ts"></script>
+
 <template>
   <article class="p-5">
     <div class="items-center justify-between text-left md:flex">
       <h1 class="mb-0">Floor Check Report.</h1>
       <div class="my-6 flex gap-5 md:my-0">
         <a class="btn hidden" href="" target="_blank">View GitHub.</a>
-        <a class="btn" href="https://projects.joshlarminay.com/floor_check_report/" target="_blank"
-          >View project.</a
-        >
+        <a class="btn" href="https://projects.joshlarminay.com/floor_check_report/" target="_blank">
+          View project.
+        </a>
       </div>
     </div>
-    <div class="mt-16 items-start gap-10 md:flex">
+
+    <div class="mt-16 md:flex gap-4 justify-start">
+      <!-- text -->
       <div class="md:w-3/5">
         <h3>About.</h3>
         <p>
@@ -26,14 +30,17 @@
           seen on the project page.
         </p>
       </div>
+      <!-- image -->
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/floor_check_report/floor_check_report-slide1.webp"
+          src="/images/portfolio/floor_check_report/slide1.webp"
         />
       </div>
     </div>
-    <div class="mt-16 items-start gap-10 md:flex">
+
+    <div class="mt-16 md:flex gap-4 justify-start">
+      <!-- text -->
       <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
@@ -46,10 +53,11 @@
           leads, so I didn't care too much.
         </p>
       </div>
+      <!-- image -->
       <div class="order-1 aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/floor_check_report/floor_check_report-slide2.webp"
+          src="/images/portfolio/floor_check_report/slide2.webp"
         />
       </div>
     </div>

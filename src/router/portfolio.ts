@@ -1,5 +1,4 @@
 import arcade_machine from '@/views/portfolio/arcade_machine.vue';
-import personal_website from '@/views/portfolio/personal_website.vue';
 import swords_n_souls from '@/views/portfolio/swords_n_souls.vue';
 import js_snake from '@/views/portfolio/js_snake.vue';
 import larminay_vault from '@/views/portfolio/larminay_vault.vue';
@@ -7,6 +6,11 @@ import cell_simulator from '@/views/portfolio/cell_simulator.vue';
 import victoria_titan from '@/views/portfolio/victoria_titan.vue';
 import floor_check_report from '@/views/portfolio/floor_check_report.vue';
 import ai_dino_runner from '@/views/portfolio/ai_dino_runner.vue';
+import guess_the_movie from '@/views/portfolio/guess_the_movie.vue';
+import gathering_our_voices from '@/views/portfolio/gathering_our_voices.vue';
+import luma_native_housing_society from '@/views/portfolio/luma_native_housing_society.vue';
+import elst from '@/views/portfolio/elst.vue';
+import isparc from '@/views/portfolio/isparc.vue';
 
 export default [
   {
@@ -14,12 +18,6 @@ export default [
     name: 'Portfolio/arcade_machine',
     component: arcade_machine,
     meta: { title: 'Arcade Machine. | Portfolio. | Josh Larminay.' },
-  },
-  {
-    path: '/portfolio/personal-website',
-    name: 'Portfolio/personal_website',
-    component: personal_website,
-    meta: { title: 'Personal Website. | Portfolio. | Josh Larminay.' },
   },
   {
     path: '/portfolio/swords-n-souls',
@@ -62,5 +60,35 @@ export default [
     name: 'Portfolio/ai_dino_runner',
     component: ai_dino_runner,
     meta: { title: 'AI Dino Runner. | Portfolio. | Josh Larminay.' },
+  },
+  {
+    path: '/portfolio/guess-the-movie',
+    name: 'Portfolio/guess_the_movie',
+    component: guess_the_movie,
+    meta: { title: 'Guess The Movie. | Portfolio. | Josh Larminay.' },
+  },
+  {
+    path: '/portfolio/gathering-our-voices',
+    name: 'Portfolio/gathering_our_voices',
+    component: gathering_our_voices,
+    meta: { title: 'Gathering Our Voices. | Portfolio. | Josh Larminay.' },
+  },
+  {
+    path: '/portfolio/luma-native-housing-society',
+    name: 'Portfolio/luma_native_housing_society',
+    component: luma_native_housing_society,
+    meta: { title: "Lu'ma Native Housing Society. | Portfolio. | Josh Larminay." },
+  },
+  {
+    path: '/portfolio/elst',
+    name: 'Portfolio/elst',
+    component: elst,
+    meta: { title: 'ELST. | Portfolio. | Josh Larminay.' },
+  },
+  {
+    path: '/portfolio/isparc',
+    name: 'Portfolio/isparc',
+    component: isparc,
+    meta: { title: 'ISPARC. | Portfolio. | Josh Larminay.' },
   },
 ];

@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <article class="p-5">
     <div class="items-center justify-between text-left md:flex">
@@ -11,7 +13,9 @@
         >
       </div>
     </div>
+
     <div class="mt-16 items-start gap-10 md:flex">
+      <!-- text -->
       <div class="md:w-3/5">
         <h3>About.</h3>
         <p>
@@ -28,14 +32,17 @@
           predict who will win.
         </p>
       </div>
+      <!-- image -->
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/cell_simulator/cell_simulator-slide1.webp"
+          src="/images/portfolio/cell_simulator/slide1.webp"
         />
       </div>
     </div>
+
     <div class="mt-16 items-start gap-10 md:flex">
+      <!-- text -->
       <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
@@ -48,10 +55,11 @@
           team's stats.
         </p>
       </div>
+      <!-- image -->
       <div class="order-1 aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/cell_simulator/cell_simulator-slide2.webp"
+          src="/images/portfolio/cell_simulator/slide2.webp"
         />
       </div>
     </div>

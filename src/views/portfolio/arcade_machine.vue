@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import gallery from '@/components/gallery.vue';
+</script>
+
 <template>
   <article class="p-5">
     <div class="items-center justify-between text-left md:flex">
@@ -7,7 +11,9 @@
         <a class="btn hidden" href="" target="_blank">View project.</a>
       </div>
     </div>
-    <div class="mt-16 items-start gap-10 md:flex">
+
+    <div class="mt-16 md:flex gap-4 justify-start">
+      <!-- text -->
       <div class="md:w-3/5">
         <h3>About.</h3>
         <p>
@@ -18,14 +24,17 @@
           make a full emulation station.
         </p>
       </div>
+      <!-- image -->
       <div class="aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/arcade_machine/arcade_machine-slide1.webp"
+          src="/images/portfolio/arcade_machine/slide1.webp"
         />
       </div>
     </div>
-    <div class="mt-16 items-start gap-10 md:flex">
+
+    <div class="mt-16 md:flex gap-4 justify-start">
+      <!-- text -->
       <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
@@ -45,37 +54,27 @@
           allowing me to detect the joypad buttons.
         </p>
       </div>
+      <!-- image -->
       <div class="order-1 aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/arcade_machine/arcade_machine-slide4.webp"
+          src="/images/portfolio/arcade_machine/slide8.webp"
         />
       </div>
     </div>
-    <div class="mt-16">
-      <h3>Gallery.</h3>
-      <div class="flex items-start gap-2 md:gap-10">
-        <img
-          class="h-full w-full object-cover"
-          src="/images/portfolio/arcade_machine/arcade_machine-slide5.webp"
-        />
-        <img
-          class="h-full w-full object-cover"
-          src="/images/portfolio/arcade_machine/arcade_machine-slide2.webp"
-        />
-        <img
-          class="h-full w-full object-contain"
-          src="/images/portfolio/arcade_machine/arcade_machine-slide7.webp"
-        />
-        <img
-          class="h-full w-full object-contain"
-          src="/images/portfolio/arcade_machine/arcade_machine-slide9.webp"
-        />
-        <img
-          class="h-full w-full object-contain"
-          src="/images/portfolio/arcade_machine/arcade_machine-slide10.webp"
-        />
-      </div>
+
+    <div class="mt-10">
+      <gallery
+        :images="[
+          '/images/portfolio/arcade_machine/slide2.webp',
+          '/images/portfolio/arcade_machine/slide3.webp',
+          '/images/portfolio/arcade_machine/slide4.webp',
+          '/images/portfolio/arcade_machine/slide5.webp',
+          '/images/portfolio/arcade_machine/slide6.webp',
+          '/images/portfolio/arcade_machine/slide9.webp',
+          '/images/portfolio/arcade_machine/slide10.webp',
+        ]"
+      />
     </div>
   </article>
 </template>

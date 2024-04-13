@@ -1,13 +1,21 @@
+<script setup lang="ts">
+import gallery from '@/components/gallery.vue';
+</script>
+
 <template>
   <article class="p-5">
     <div class="items-center justify-between text-left md:flex">
       <h1 class="mb-0">Larminay Vault.</h1>
       <div class="my-6 flex gap-5 md:my-0">
-        <a class="btn hidden" href="" target="_blank">View GitHub.</a>
+        <a class="btn hidden" href="https://github.com/jlarminay/Larminay-Vault" target="_blank">
+          View GitHub.
+        </a>
         <a class="btn hidden" href="" target="_blank">View project.</a>
       </div>
     </div>
-    <div class="mt-16 items-start gap-10 md:flex">
+
+    <div class="mt-16 md:flex gap-4 justify-start">
+      <!-- text -->
       <div class="md:w-3/5">
         <h3>About.</h3>
         <p>
@@ -33,35 +41,47 @@
           videos as well.
         </p>
       </div>
-      <div class="aspect-video md:w-2/5">
+      <!-- image -->
+      <div class="md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/larminay_vault/larminay_vault-slide1.webp"
+          src="/images/portfolio/larminay_vault/slide3.webp"
         />
       </div>
     </div>
+
     <div class="mt-16 items-start gap-10 md:flex">
+      <!-- text -->
       <div class="order-2 md:w-3/5">
         <h3>Development.</h3>
         <p>
-          This project was built using a basic LAMP stack (Linux, Apache, MySQL, PHP). I started
-          this before I had a lot of knowledge of frameworks so it was built using vanilla PHP and
-          Bootstrap. The site has user authentication and allow/disallow lists for specific videos
-          allowing me to control who can see what.
+          The main goal of this project was to make a self-hosted YouTube clone that would allow me
+          to easily upload and manage videos.
         </p>
         <p>
-          I really want to revisit this project in the future using proper frameworks and web
-          practices. The main addition I want is better mobile support and the ability for users to
-          upload their own videos. The next thing would be to allow the app to save images and
-          documents.
+          Some of the tools I used to build this project are: Nuxt3, PostgreSQL, Prisma, FFMPEG,
+          tRPC, Next-Auth.
         </p>
       </div>
+      <!-- image -->
       <div class="order-1 aspect-video md:w-2/5">
         <img
           class="mx-auto h-full max-w-[80vw] object-contain md:w-full"
-          src="/images/portfolio/larminay_vault/larminay_vault-slide2.webp"
+          src="/images/portfolio/larminay_vault/slide8.webp"
         />
       </div>
+    </div>
+
+    <div class="mt-10">
+      <gallery
+        :images="[
+          '/images/portfolio/larminay_vault/slide1.webp',
+          '/images/portfolio/larminay_vault/slide5.webp',
+          '/images/portfolio/larminay_vault/slide2.webp',
+          '/images/portfolio/larminay_vault/slide7.webp',
+          '/images/portfolio/larminay_vault/slide4.webp',
+        ]"
+      />
     </div>
   </article>
 </template>
