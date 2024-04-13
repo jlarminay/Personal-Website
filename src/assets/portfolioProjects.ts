@@ -4,11 +4,11 @@ export default [
     name: 'Gathering Our Voices.',
     poster: '_placeholders/800x400.svg',
   },
-  {
-    id: 'luma_native_housing_society',
-    name: "Lu'ma Native Housing Society.",
-    poster: '_placeholders/600x400.svg',
-  },
+  // {
+  //   id: 'luma_native_housing_society',
+  //   name: "Lu'ma Native Housing Society.",
+  //   poster: '_placeholders/600x400.svg',
+  // },
   {
     id: 'larminay_vault',
     name: 'Larminay Vault.',

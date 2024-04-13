@@ -10,7 +10,7 @@ import gallery from '@/components/gallery.vue';
         <a class="btn" href="https://github.com/jlarminay/Guess-The-Movie" target="_blank">
           View GitHub.
         </a>
-        <a class="btn" href="https://projects.joshlarminay.com/home" target="_blank">
+        <a class="btn" href="https://projects.joshlarminay.com/movies/home" target="_blank">
           View project.
         </a>
       </div>
