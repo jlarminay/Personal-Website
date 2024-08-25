@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite --port 3000",
     "build": "vue-tsc && vite build",
     "preview": "npm run build && vite preview --port 6161",
     "sitemap": "start-server-and-test preview http://localhost:6161 sitemap:generate && npm run sitemap:replace",
