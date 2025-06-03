@@ -81,7 +81,7 @@ async function updateTitle() {
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 @keyframes background-spin {
   0% {
     transform: rotate(0deg);

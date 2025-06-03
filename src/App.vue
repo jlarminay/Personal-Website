@@ -11,4 +11,5 @@ import Footer from '@/components/singles/Footer.vue';
   <Footer />
 </template>
 
-<style scoped></style>
+<style scoped lang="postcss">
+</style>

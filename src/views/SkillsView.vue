@@ -56,4 +56,4 @@ let icons = ref([
   </section>
 </template>
 
-<style scoped></style>
+<style scoped lang="postcss"></style>

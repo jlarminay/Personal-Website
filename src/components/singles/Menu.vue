@@ -3,16 +3,16 @@
     <router-link :to="{ name: 'HomeView' }" class="before:hidden">
       <div class="p-2 font-['Montserrat'] text-4xl font-black text-white">Josh Larminay.</div>
     </router-link>
-    <nav class="w-full sm:relative sm:w-auto md:w-auto">
-      <router-link :to="{ name: 'HomeView' }">Home.</router-link>
-      <router-link :to="{ name: 'AboutView' }">About.</router-link>
-      <router-link :to="{ name: 'SkillsView' }">Skills.</router-link>
-      <router-link :to="{ name: 'PortfolioView' }">Portfolio.</router-link>
+    <nav class="w-full sm:relative sm:w-auto md:w-auto flex gap-4">
+      <router-link to="/">Home.</router-link>
+      <router-link to="/about">About.</router-link>
+      <router-link to="/skills">Skills.</router-link>
+      <router-link to="/portfolio">Portfolio.</router-link>
     </nav>
   </menu>
 </template>
 
-<style scoped>
+<style scoped lang="postcss">
 nav {
   a {
     @apply p-2 border-0 inline-block mx-2 border-gray-300 text-gray-300 transition-all no-underline before:hidden;

@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import { ref, PropType, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
-defineProps({
-  images: {
-    type: Array as PropType<string[]>,
-    required: true,
-  },
-});
+defineProps<{
+  images: string[];
+}>();
 const timerInterval = ref<any>(null);
 
 onMounted(() => {
@@ -131,4 +128,4 @@ const lightboxImage = ref('');
   </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="postcss"></style>

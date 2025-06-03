@@ -3,7 +3,7 @@ import gallery from '@/components/gallery.vue';
 </script>
 
 <template>
-  <article class="p-5">
+  <article>
     <div class="items-center justify-between text-left md:flex">
       <h1 class="mb-0">ELST.</h1>
       <div class="my-6 flex gap-5 md:my-0">
@@ -33,4 +33,4 @@ import gallery from '@/components/gallery.vue';
   </article>
 </template>
 
-<style scoped></style>
+<style scoped lang="postcss"></style>

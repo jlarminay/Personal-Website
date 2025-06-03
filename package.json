@@ -1,32 +1,28 @@
 {
-  "name": "personal-website",
+  "name": "new-test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite --port 3000",
-    "build": "vue-tsc && vite build",
-    "preview": "npm run build && vite preview --port 6161",
-    "sitemap": "start-server-and-test preview http://localhost:6161 sitemap:generate && npm run sitemap:replace",
-    "sitemap:generate": "sitemap-generator http://localhost:6161 -v -r -f public/sitemap.xml",
-    "sitemap:replace": "replace-in-files --string='http://localhost:6161' --replacement='https://joshlarminay.com' ./public/sitemap.xml"
+    "start": "npm i && vite --port 3000",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.21",
-    "vue-inline-svg": "^3.1.2",
-    "vue-router": "^4.3.0"
+    "vue": "^3.5.16",
+    "vue-inline-svg": "^4.0.1",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "prettier": "^3.2.5",
-    "replace-in-files-cli": "^2.2.0",
-    "sitemap-generator-cli": "^7.5.0",
-    "start-server-and-test": "^2.0.3",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "vue-tsc": "^2.0.6"
+    "@tailwindcss/vite": "^4.1.8",
+    "@types/node": "^22.15.29",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/tsconfig": "^0.7.0",
+    "npm-check-updates": "^18.0.1",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.8",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vue-tsc": "^2.2.10"
   }
 }

@@ -34,4 +34,4 @@
   </section>
 </template>
 
-<style scoped></style>
+<style scoped lang="postcss"></style>

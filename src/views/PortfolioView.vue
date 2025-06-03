@@ -84,7 +84,7 @@ detectImageRows();
 </script>
 
 <template>
-  <section class="p-5">
+  <section>
     <h1>Cool projects I've done.</h1>
     <p>
       Here are some projects I've worked on in the past. Some are ongoing, some I did at work and
@@ -112,10 +112,10 @@ detectImageRows();
           class="truncate pointer-events-none w-full absolute bottom-0 m-0 px-3 py-2 text-xl text-white transition-all group-hover:pb-4 bg-black bg-opacity-50 group-hover:bg-opacity-80"
         >
           <div class="flex flex-col">
-            <p class="p-0 m-0 truncate">{{ project.name }}</p>
+            <p class="!p-0 !m-0 truncate">{{ project.name }}</p>
             <div v-if="!!project.tools" class="opacity-80">
               <div class="bg-white w-[150px] max-w-full h-[1px] my-1" />
-              <p class="p-0 m-0 text-sm whitespace-normal line-clamp-1">
+              <p class="!p-0 !m-0 text-sm whitespace-normal line-clamp-1">
                 {{ project.tools }}
               </p>
             </div>
@@ -126,4 +126,4 @@ detectImageRows();
   </section>
 </template>
 
-<style scoped></style>
+<style scoped lang="postcss"></style>

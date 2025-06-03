@@ -7,4 +7,4 @@
   <span class="hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block"> 2xl </span>
 </template>
 
-<style scoped></style>
+<style scoped lang="postcss"></style>
