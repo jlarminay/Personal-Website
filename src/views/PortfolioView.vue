@@ -1,86 +1,8 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref } from 'vue';
 import AllProjects from '@/assets/portfolioProjects.ts';
 
-const timerInterval = ref<any>(null);
-
-onMounted(() => {
-  // on screen update, detect image rows
-  detectImageRows();
-  window.addEventListener(
-    'resize',
-    function (_event) {
-      detectImageRows();
-    },
-    true,
-  );
-  // every 500ms, detect image rows
-  timerInterval.value = setInterval(() => {
-    detectImageRows();
-  }, 500);
-});
-onUnmounted(() => {
-  clearInterval(timerInterval.value);
-});
-
-function detectImageRows() {
-  const container = document.getElementById('gallery');
-  if (!container) return [];
-
-  const allImages = Array.from(container.querySelectorAll('a'));
-
-  let previousX = 0;
-  let allRows = [];
-  let currentRow = [] as any[];
-
-  // reset position of all images
-  allImages.forEach((item) => {
-    item.style.width = 'auto';
-  });
-
-  // get all images and sort them into rows
-  allImages.forEach((item) => {
-    // get current image top position
-    const x = item.offsetTop;
-
-    // check if current image is on a new row
-    if (x !== previousX) {
-      // check if not first row
-      if (previousX !== 0) {
-        allRows.push(currentRow);
-      }
-      // reset current row
-      previousX = x;
-      currentRow = [];
-    }
-    // push image to current row
-    currentRow.push(item);
-  });
-  // push final row
-  allRows.push(currentRow);
-
-  // calculate each row width items
-  allRows.forEach((row) => {
-    let totalWidth = 0;
-    let gap = 10;
-
-    // find total row width
-    row.forEach((item) => {
-      // add item width
-      totalWidth += item.offsetWidth;
-    });
-    // add gap width
-    totalWidth += gap * (row.length - 1);
-
-    // set each item width
-    row.forEach((item) => {
-      // set width to be correct percentage
-      let newWidth = (item.offsetWidth / totalWidth) * 100;
-      item.style.width = newWidth === 0 ? 'auto' : `${newWidth}%`;
-    });
-  });
-}
-detectImageRows();
+const projects = ref(AllProjects);
 </script>
 
 <template>
@@ -96,32 +18,45 @@ detectImageRows();
       <a href="https://jlarminay.itch.io/" target="_blank">itch.io</a>.
     </p>
 
-    <div id="gallery" class="flex flex-wrap justify-between gap-[10px]">
-      <router-link
-        v-for="(project, i) in AllProjects"
-        :key="i"
+    <div class="flex flex-wrap justify-center">
+      <div v-for="project in projects" :key="project.id" class="w-1/3 p-2">
+        <div class="relative aspect-video">
+          <router-link
+            :to="`/portfolio/${project.id}`"
+            class="block h-full w-full overflow-hidden group !border-0 before:hidden"
+          >
+            <img
+              :src="`/images/portfolio/${project.poster}`"
+              alt="Project Poster"
+              class="absolute h-full w-full object-cover blur-[1px] brightness-[0.4] transition-all group-hover:blur-[0] group-hover:brightness-[0.8]"
+            />
+            <div
+              class="pointer-events-none absolute bottom-0 m-0 px-3 py-2 text-white transition-all group-hover:pb-4 bg-black/50 group-hover:bg-black/70 w-full"
+            >
+              <span class="text-xs !m-0 rounded-lg px-1.5 py-0 bg-white/80 text-black/80">
+                {{ project.type }}
+              </span>
+              <p class="text-lg !m-0">{{ project.name }}</p>
+            </div>
+          </router-link>
+        </div>
+      </div>
+
+      <!-- <router-link
         :to="{ name: 'Portfolio/' + project.id }"
-        class="before:hidden overflow-hidden h-[200px] group"
+        :key="index"
+        class="group relative aspect-video w-full overflow-hidden p-5 transition-all duration-500 before:hidden sm:w-1/2 lg:w-1/3 border-red-500"
       >
         <img
-          :src="'/images/portfolio/' + project.poster"
-          class="object-cover h-full w-full group-hover:scale-105 transition group"
+          :src="`/images/portfolio/${project.poster}`"
+          class="absolute h-full w-full object-cover blur-[2px] brightness-[0.4] transition-all group-hover:blur-0"
         />
-
         <div
-          class="truncate pointer-events-none w-full absolute bottom-0 m-0 px-3 py-2 text-xl text-white transition-all group-hover:pb-4 bg-black bg-opacity-50 group-hover:bg-opacity-80"
+          class="pointer-events-none absolute bottom-0 m-0 px-3 pb-2 text-xl text-white transition-all group-hover:pb-4"
         >
-          <div class="flex flex-col">
-            <p class="!p-0 !m-0 truncate">{{ project.name }}</p>
-            <div v-if="!!project.tools" class="opacity-80">
-              <div class="bg-white w-[150px] max-w-full h-[1px] my-1" />
-              <p class="!p-0 !m-0 text-sm whitespace-normal line-clamp-1">
-                {{ project.tools }}
-              </p>
-            </div>
-          </div>
+          <span>{{ project.name }}</span>
         </div>
-      </router-link>
+      </router-link> -->
     </div>
   </section>
 </template>

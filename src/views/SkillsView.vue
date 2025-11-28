@@ -2,8 +2,8 @@
 import { ref } from 'vue';
 import InlineSvg from 'vue-inline-svg';
 
-let icons = ref([
-  'vuejs',
+const icons = ref([
+  'vue',
   'python',
   'godot',
   'raspberrypi',
@@ -11,11 +11,17 @@ let icons = ref([
   'docker',
   'nginx',
   'nodejs',
+  'typescript',
+  'prisma',
   'php',
   'postgresql',
   'tailwindcss',
   'terraform',
 ]);
+
+function getUrl(icon: string) {
+  return `/images/logos/${icon}.svg`;
+}
 </script>
 
 <template>
@@ -34,14 +40,14 @@ let icons = ref([
         <h2>My favorite languages and tools.</h2>
         <div class="mb-7 flex flex-wrap justify-start">
           <div v-for="(icon, index) in icons" :key="index" class="group relative m-3 w-[75px]">
-            <InlineSvg
-              :src="'/images/logos/' + icon + '.svg'"
+            <img
+              :src="`/images/logos/${icon}.svg`"
               :alt="icon"
               :title="icon"
               class="absolute top-0 z-10 h-full w-full blur-none transition-all group-hover:blur-sm"
             />
-            <InlineSvg
-              :src="'/images/logos/' + icon + '.svg'"
+            <img
+              :src="`/images/logos/${icon}.svg`"
               :alt="icon"
               :title="icon"
               class="relative top-0 z-20 h-full w-full"
