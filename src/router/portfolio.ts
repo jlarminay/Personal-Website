@@ -11,6 +11,7 @@ import gathering_our_voices from '@/views/portfolio/gathering_our_voices.vue';
 import luma_native_housing_society from '@/views/portfolio/luma_native_housing_society.vue';
 import elst from '@/views/portfolio/elst.vue';
 import isparc from '@/views/portfolio/isparc.vue';
+import Vnfc_warriors from '@/views/portfolio/vnfc_warriors.vue';
 
 export default [
   {
@@ -90,5 +91,11 @@ export default [
     name: 'Portfolio/isparc',
     component: isparc,
     meta: { title: 'ISPARC. | Portfolio. | Josh Larminay.' },
+  },
+  {
+    path: '/portfolio/vnfc-warriors',
+    name: 'Portfolio/vnfc-warriors',
+    component: Vnfc_warriors,
+    meta: { title: 'VNFC Warriors. | Portfolio. | Josh Larminay.' },
   },
 ];

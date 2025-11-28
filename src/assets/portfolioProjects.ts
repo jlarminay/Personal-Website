@@ -9,7 +9,7 @@ export default [
   {
     id: 'gathering-our-voices',
     name: 'Gathering Our Voices.',
-    poster: '_placeholders/800x400.svg',
+    poster: 'gathering_our_voices/slide1.png',
     type: 'Professional',
     tools: ['Node', 'Vue3', 'tRPC', 'PostgreSQL'],
   },
@@ -37,7 +37,7 @@ export default [
   {
     id: 'vnfc-warriors',
     name: 'VNFC Warriors.',
-    poster: '_placeholders/600x400.svg',
+    poster: 'vnfc_warriors/slide1.png',
     type: 'Professional',
     tools: ['Node'],
   },
@@ -65,7 +65,7 @@ export default [
   {
     id: 'isparc',
     name: 'ISPARC.',
-    poster: '_placeholders/600x700.svg',
+    poster: 'isparc/slide1.png',
     type: 'Professional',
     tools: ['PHP', 'MySQL'],
   },

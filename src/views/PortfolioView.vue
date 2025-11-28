@@ -41,22 +41,6 @@ const projects = ref(AllProjects);
           </router-link>
         </div>
       </div>
-
-      <!-- <router-link
-        :to="{ name: 'Portfolio/' + project.id }"
-        :key="index"
-        class="group relative aspect-video w-full overflow-hidden p-5 transition-all duration-500 before:hidden sm:w-1/2 lg:w-1/3 border-red-500"
-      >
-        <img
-          :src="`/images/portfolio/${project.poster}`"
-          class="absolute h-full w-full object-cover blur-[2px] brightness-[0.4] transition-all group-hover:blur-0"
-        />
-        <div
-          class="pointer-events-none absolute bottom-0 m-0 px-3 pb-2 text-xl text-white transition-all group-hover:pb-4"
-        >
-          <span>{{ project.name }}</span>
-        </div>
-      </router-link> -->
     </div>
   </section>
 </template>
